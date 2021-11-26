@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nederlandse Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="Gegevens" class="header">Vul uw gegevens in</div>
+    <div id="container">
+        <form id="myform" action="result.html">
+
+            <fieldset>
+                <legend id="taal">Taal</legend>
+                <label for="nl">Nederlands</label>
+                <input id="languageNL" type="radio" name="language" value="nl">
+                <label for="uk">Engels</label>
+                <input  id="languageUK" type="radio"  name="language" value="uk">
+            </fieldset>
+
+            <div class="fout" id="div_fout"></div>
+            <div class="succes"></div>
+
+
+            <div class="input">
+                <label id="aanhef" for="aanhef">Aanhef:</label>
+                <select onchange="setGender()" name="aanhef" id="aanhefSelect">
+                    <option id="heer"  value="heer">Heer</option>
+                    <option id="vrouw" value="vrouw">Mevrouw</option>
+                    <option id="anders" value="anders">Anders</option>
+                  </select><br>
+            </div>
+
+            <label id="voornaam" for="naam">Naam:
+            <span class="foutbericht" id="foutnaam" >*vul alleen letters  in.</span>
+                
+            </label>
+            <br><input type="text" name="" id="naam"><br>
+            <label id="naam" for="naam"></label>
+            
+
+            <label id="achternaamLabel" for="achternaam">Achternaam:
+
+            <span class="foutbericht" id="foutachternaam" >*vul alleen letters  in.</span> 
+                
+            </label>
+            <br><input type="text" name="achternaam" id="achternaam"><br>
+            <label id="achternaam" for="achternaam"></label>
+            
+
+
+            <label id="adreslabel" for="adres">Adres:
+            <span class="foutbericht" id="foutadres" >*vul een geldig adres  in.</span>
+
+            </label>
+            <br><input type="text" name="adres" id="adres"><br>
+            <label id="adres" for="adres"></label>
+            
+
+
+            <label id="woonplaats" for="plaats">woonplaats:
+            <span class="foutbericht" id="foutplaats" >*vul een geldige plaats  in.</span>
+                
+            </label>
+            <br><input type="text" name="plaats" id="plaats"><br>
+            <label id="woonplaats" for="plaats"></label>
+            
+
+
+            <label id="postcodeLabel" for="postcode">Postcode:
+              
+            <span class="foutbericht" id="foutpostcode" >*vul een geldige postcode  in.</span>
+   
+                
+            </label>
+            <br><input type="text" name="" id="postcode"><br>
+            <label id="postcode" for="postcode"></label>
+            
+            <label id="NationaliteitLabel" for="Nationaliteit">Nationaliteit:
+
+            <span class="foutbericht" id="foutnationaliteit" >*vul alleen letters in.</span>
+                
+            </label>
+            <br><input type="text" name="nationality" id="Nationaliteit"><br>
+            <label id="Nationaliteit" for="Nationaliteit"></label>
+            
+
+
+      <!--      <div class="input">
+                <div id="beroepLabel" class="label"> Beroep:</div><br>
+                <input type="text" name="beroep" id="beroep">
+                <span class="foutbericht" id="foutberoep" >*alleen woorden.</span>
+            </div>
+        -->
+            
+                <div id="input">
+                <label id="beroepLabel" for="beroep">Beroep:
+
+                <span class="foutbericht" id="foutberoep" >*vul alleen letters in.</span>
+                
+                </label>
+                <br><input type="text" name="Profession" id="beroep"><br>
+                <label id="beroep" for="beroep"></label>
+                </div>
+
+
+            
+                <label id="verjaardaglabel" for="verjaardag">Verjaardag:
+                   
+                </label>
+                <br><input type="date" name="birthday" id="verjaardag">
+                <label id="leeftijd" for="leeftijd"></label>
+
+            <div class="input">
+                <br><input type="submit" id="submit" value="Submit">
+            </div><br>
+
+            <!--Een link voor Engels form-->
+
+
+        </form>
+    </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
